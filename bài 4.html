@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--phần a-->
+<input type="text" id="a1">
+<input type="button" id="value" onclick="clickme()">
+<p id="chuvi"></p>
+<p id="dientich"></p>
+<Script>
+    let a;
+    function clickme() {
+       a = document.getElementById('a1').value;
+        document.getElementById('chuvi').innerHTML = 'P =' + a * 4
+        document.getElementById('dientich').innerHTML = 'S =' + a * a
+    }
+</Script>
+<!--phần b-->
+<input type="text" id="a2">
+<input type="text" id="a3">
+<input type="button" id="s1" onclick="clicka()">
+<p id="d1"></p>
+<p id="d2"></p>
+<script>
+  let a;
+  function clicka() {
+      a = document.getElementById('a2').value;
+      b = document.getElementById('a3').value;
+      document.getElementById('d1').innerHTML = 'a^2 =' + a**2
+      document.getElementById('d2').innerHTML = 'a^b =' + a*b
+  }
+</script>
+<!--phần d -->
+<input type="text" id="l1">
+<input type="button" value="nhập" onclick="click()">
+<p id="l2"></p>
+<script>
+    let a;
+    function click() {
+        a = document.getElementById('l1')
+        if (2000 <= a <= 2100) {
+           document.getElementById(l2).innerHTML = 'thế kỉ 21'
+        } else if (1900 <= a <=2000) {
+            document.getElementById(l2).innerHTML = 'thế kỉ 20'
+        } else {
+            document.getElementById(l2).innerHTML = 'thế kỉ 19'
+        }
+    }
+</script>
+</body>
+</html>
